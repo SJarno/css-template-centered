@@ -1,13 +1,13 @@
-<form class="container">
+<form class="container" ngNativeValidate>
     <header>
         Login
     </header>
     <main>
-        <input class="item" type="text" [value]="'username'">
+        <input class="item" type="text" placeholder="username" name="username" [(ngModel)]="credentials.username" required="">
         <br>
-        <input class="item" type="text" [value]="'password'">
+        <input class="item" type="text" placeholder="password" name="password" [(ngModel)]="credentials.password" required="">
     </main>
     <footer>
-        <button>login</button>
+        <input type="submit" value="Login" (click)="test()">
     </footer>
 </form>
