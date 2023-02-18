@@ -1,0 +1,17 @@
+form {
+    background-color: green;
+    font-size: 5rem;
+    
+}
+
+.container {
+    display: grid;
+    grid-template: auto auto / 33rem;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item {
+
+}
